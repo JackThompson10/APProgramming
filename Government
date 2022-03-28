@@ -1,0 +1,32 @@
+/**
+ * This Class Builds The Government Super Class
+ * 
+ */
+
+public class Goverment
+{
+    private String name;
+    private int idNum;
+    private String party;
+    
+    
+    //constructors
+    public Goverment(String n, String p, int id)
+    {
+        this.name = n;
+        this.idNum = id;
+        this.party = p;
+    }
+    public String getParty()
+    {
+        return this.party;
+    }
+    public void printName()
+    {
+        System.out.println(this.name);
+    }
+    public String getName()
+    {
+        return this.name;
+    }
+}

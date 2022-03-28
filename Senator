@@ -1,0 +1,33 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class Senator extends Congress
+{
+    private boolean Impeach;
+    
+    public Senator(String n, String p, int id, String v, boolean i)
+    {
+        super(n, p, id, v);
+        this.Impeach = i;
+    }
+    public void impeachVote()
+    {
+        // if the vote to impeach is = to the person who created vote
+        if (getParty().equals("Republican"))
+        {
+            this.Impeach = false;
+        }
+        else if (getParty().equals("Democrat"))
+        {
+            this.Impeach = true;
+        }
+    }
+    public void printName()
+    {
+        System.out.println(super.getName());
+    }
+    
+}

@@ -1,0 +1,29 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class GovSim
+{
+    public static void main(String[] args)
+    {
+        President p1 = new President("Joe", "Democrat", 1, null);
+        Congress p2 = new Congress("Kevin", "Democrat", 2353,"Has not voted yet");
+        Congress p3 = new Congress("Jack", "Republican" ,23523, "Has not voted yet");
+        Congress p4 = new Congress("JohnJack", "Republican", 654,"Has not voted yet");
+        Congress p5 = new Congress("Michael", "Democrat", 54353,"Has not voted yet");
+        Senator p6 = new Senator("PBlake", "Democrat" , 534632, "Has not voted yet", false);
+
+        System.out.println(p2.getName() + " is a " + p2.getParty());
+        System.out.println(p6.getName() + p6.castVote());
+        System.out.println(p1.getName() + p1.veto());
+        
+        p1.printName();
+        p2.printName();
+        p3.printName();
+        p4.printName();
+        p5.printName();
+        p6.printName();
+    }
+}

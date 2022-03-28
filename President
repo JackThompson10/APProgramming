@@ -1,0 +1,26 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class President extends Goverment
+{
+    private String veto;
+     public President(String n, String p, int id, String v1)
+    {
+        super(n, p, id);
+        this.veto = v1;
+    }
+    public String veto()
+    {
+         if((Math.random()*10) <= 2)
+         {
+             return this.veto = " votes to veto";
+         }        
+         else
+         {
+             return veto = " does not vote to veto";
+         }
+    }
+}

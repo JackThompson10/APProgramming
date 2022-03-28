@@ -1,0 +1,31 @@
+/**
+ * This Builds the Congress Sub Class to Government 
+ * Isa superclass to Senator
+ * 
+ */
+
+public class Congress extends Goverment
+{
+    private String vote;
+
+    public Congress(String n, String p, int id, String v)
+    {
+        super(n, p, id);
+        this.vote = v;
+    }
+    public String castVote()
+    { 
+        if (getParty().equals("Republican"))
+        {
+            return vote = " votes no";
+        }
+        else if (getParty().equals("Democrat"))
+        {
+            return vote = " votes yes";
+        }
+        else
+        {
+            return vote = " abstains from the vote";
+        }
+    }
+}
